@@ -16,4 +16,4 @@ Labs using Azure Services to build Azure IoT Edge Solutions using Ubuntu VM on A
 
 ### Module 3: Azure Functions at the Edge
 
-[Azure Functions](/FunctionsAtTheEdge/README.md)
+[Azure Functions at the Edge](/FunctionsAtTheEdge/README.md)
