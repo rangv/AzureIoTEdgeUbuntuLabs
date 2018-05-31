@@ -12,7 +12,7 @@ Labs using Azure Services to build Azure IoT Edge Solutions using Ubuntu VM on A
 
 ### Module 2: Streaming At the Edge
 
-[Streaming at the Edge](/StreamingAtTheEdge/README.md)
+[Streaming at the Edge](/StreamingAtTheEdge/Readme.md)
 
 ### Module 3: Azure Functions at the Edge
 
