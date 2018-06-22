@@ -22,15 +22,15 @@ Azure Container Registry allows you to store images for all types of container d
 
 This helps **Contoso** simplify container development by easily storing and managing container images for Azure deployments in a central registry.
 
- ![Create Resource](../../Linked_Image_Files/create_resource.png)
+ ![Create Resource](../images/create_resource.png)
 
 Click on **Containers and Container Registry**
 
- ![Container Registry](../../Linked_Image_Files/container_registry.png)
+ ![Container Registry](../images/container_registry.png)
 
 Enable the admin user to secure the registry and click on **Create button**
 
- ![Create Container Registry](../../Linked_Image_Files/create_acr.png)
+ ![Create Container Registry](../images/create_acr.png)
 
 ## Create a function project
 
@@ -54,7 +54,7 @@ Select **File > Open Folder**, then browse to the FilterFunction folder and open
 
 From VSCode extensions add **Nuget Package Manager**. Click **Install**
 
- ![Nuget Package Manager](../../Linked_Image_Files/vscode_nuget_extension.png)
+ ![Nuget Package Manager](../images/vscode_nuget_extension.png)
 
 In VS Code explorer, expand the EdgeHubTrigger-Csharp folder, then open the run.csx file.
 
@@ -136,7 +136,7 @@ public static async Task Run(Message messageReceived, IAsyncCollector<Message> o
 5. You can get the full container image address with tag in the VS Code integrated terminal. For more infomation about the build and push definition, you can refer to the `module.json` file.
 
 
- ![registry](../../Linked_Image_Files/pushtoregistry.png)
+ ![registry](../images/pushtoregistry.png)
 
 
 ## Add registry credentials to your Edge device
@@ -147,7 +147,7 @@ Add the credentials for your registry to the Edge runtime on the computer where 
     sudo iotedgectl login --address <your container registry address> --username <username> --password <password>
     ```
 
- ![registry](../../Linked_Image_Files/registry.png)
+ ![registry](../images/registry.png)
 
 ## Run the solution
 
@@ -163,7 +163,7 @@ Add the credentials for your registry to the Edge runtime on the computer where 
     3. In the **Image URI** field, enter your image address; for example `<your container registry address>/filterfunction:0.0.1-amd64`. The full image address can be found from the previous section.
     4. Click **Save**.
 
-    ![registry](../../Linked_Image_Files/edgefilterfunction.png)
+    ![registry](../images/edgefilterfunction.png)
 
 5. Click **Next**.
 
@@ -174,7 +174,7 @@ Add the credentials for your registry to the Edge runtime on the computer where 
           "filterToIoTHub":"FROM /messages/modules/filterFunction/outputs/* INTO $upstream"
     ```
 
-    ![registry](../../Linked_Image_Files/routesfilterfunction.png)
+    ![registry](../images/routesfilterfunction.png)
 
 7. Click **Next**.
 
@@ -182,10 +182,10 @@ Add the credentials for your registry to the Edge runtime on the computer where 
 
 9. Return to the IoT Edge device details page and click **Refresh**. You should see the new **filterfunction** module running along with the **tempSensor** module and the **IoT Edge runtime**.
 
- ![registry](../../Linked_Image_Files/filterFuctiondeployed.png)
+ ![registry](../images/filterFuctiondeployed.png)
 
 ## View generated data
 
 Alerts are generated when machine.temperature is > 25
 
- ![registry](../../Linked_Image_Files/filterfunctionoutput.png)
+ ![registry](../images/filterfunctionoutput.png)
