@@ -91,13 +91,7 @@ python --version
 Update the apt package index
 
 ```linux
-sudo apt-get update
-```
-
-Install Docker:
-
-```linux
-sudo apt-get install docker
+apt install docker.io
 ```
 
 Update the apt package index.
